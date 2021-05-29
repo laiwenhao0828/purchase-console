@@ -1,7 +1,4 @@
-/*
- * Unpay.com Inc.
- * Copyright (c) 2017-2018 All Rights Reserved.
- */
+
 package com.ptg.purchase.console.exception;
 
 import lombok.Data;
