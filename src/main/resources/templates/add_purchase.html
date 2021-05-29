@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: htmlhead">
+</head>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>添加采购供应商</title>
+    <script src="/js/jquery/jquery-3.3.1.min.js"></script>
+    <style type="text/css">
+        body, table {
+            font-size: 12px;
+        }
+
+        table {
+            table-layout: fixed;
+            empty-cells: show;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        td {
+            height: 20px;
+        }
+
+        h1, h2, h3 {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            background: #FFF;
+            border: 1px solid #9DB3C5;
+            padding: 1px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .title h1 {
+            line-height: 31px;
+            text-align: center;
+            background-repeat: repeat-x;
+            background-position: 0 0;
+            color: #FFF;
+        }
+
+        .title th, .title td {
+            border: 1px solid #CAD9EA;
+            padding: 5px;
+        }
+
+        /*这个是借鉴一个论坛的样式*/
+        table.t1 {
+            border: 1px solid #cad9ea;
+            color: #666;
+        }
+
+        table.t1 th {
+            background-repeat: repeat-x;
+            height: 30px;
+        }
+
+        table.t1 td, table.t1 th {
+            border: 1px solid #cad9ea;
+            padding: 0 1em 0;
+            padding-top: 10px; /**调整tr间距*/
+        }
+
+        table.t1 tr.a1 {
+            background-color: #f5fafe;
+        }
+
+        table.t2 {
+            border: 1px solid #9db3c5;
+            color: #666;
+        }
+
+        table.t2 th {
+            background-repeat: repeat-x;
+            height: 50px;
+            color: #fff;
+        }
+
+        table.t2 td {
+            border: 1px dotted #cad9ea;
+            padding: 0 2px 0;
+        }
+
+        table.t2 th {
+            border: 1px solid #a7d1fd;
+            padding: 0 2px 0;
+        }
+
+        table.t2 tr.a1 {
+            background-color: #e8f3fd;
+        }
+
+        table.t3 {
+            border: 1px solid #fc58a6;
+            color: #720337;
+        }
+
+        table.t3 th {
+            background-repeat: repeat-x;
+            height: 30px;
+            color: #35031b;
+        }
+
+        table.t3 td {
+            border: 1px dashed #feb8d9;
+            padding: 0 1.5em 0;
+        }
+
+        table.t3 th {
+            border: 1px solid #b9f9dc;
+            padding: 0 2px 0;
+        }
+
+        table.t3 tr.a1 {
+            background-color: #fbd8e8;
+        }
+    </style>
+</head>
+
+<body>
+<!--头-->
+<div th:replace="fragments/head :: header"></div>
+<div style="text-align: center">
+    <table width="60%" id="addPurchaseTab" border="1" class="t1">
+        <thead>
+        <th width="10%"> 采购商属性</th>
+        <th width="50%"> 采购商属性内容</th>
+        </thead>
+        <tr class="a1">
+            <td> 采购商名称:</td>
+            <td><input id="purchaseName" type="text" name="purchaseName" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商联系人姓名:</td>
+            <td><input id="purchaseContactName" type="text" name="purchaseContactName" style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td> 采购商联系人方式:</td>
+            <td><input id="purchaseContactPhone" type="text" name="purchaseContactPhone" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商的折扣:</td>
+            <td><input id="purchaseDiscount" type="text" name="purchaseDiscount" style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td> 采购商的详细地址:</td>
+            <td><input id="purchaseAddress" type="text" name="purchaseAddress" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商的注册时间:</td>
+            <td><input id="purchaseRegisterTime" type="text" name="purchaseRegisterTime" style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td> 采购商的注册资金:</td>
+            <td><input id="purchaseRegisterCapital" type="text" name="purchaseRegisterCapital" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商的经营范围:</td>
+            <td><input id="purchaseNatureBusiness" type="text" name="purchaseNatureBusiness" style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td> 采购商的所有制形式:</td>
+            <td><input id="purchaseOwnershipType" type="text" name="purchaseOwnershipType" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商的业务类型:</td>
+            <td><input id="purchaseBusinessType" type="text" name="purchaseBusinessType" style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td> 采购商的业务地域:</td>
+            <td><input id="purchaseBusinessLocal" type="text" name="purchaseBusinessLocal" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商的业务指标:</td>
+            <td><input id="purchaseBusinessIndex" type="text" name="purchaseBusinessIndex" style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td> 采购商的员工人数:</td>
+            <td><input id="purchaseStaffNumber" type="text" name="purchaseStaffNumber" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商的领导人姓名:</td>
+            <td><input id="purchaseLeader" type="text" name="purchaseLeader" style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td> 采购商的发展历程:</td>
+            <td><input id="purchaseDevelopmentHis" type="text" name="purchaseDevelopmentHis" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商的财务状况:</td>
+            <td><input id="purchaseFinancialSituation" type="text" name="purchaseFinancialSituation"
+                       style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td> 采购商的固定设施:</td>
+            <td><input id="purchaseFixedFacilities" type="text" name="purchaseFixedFacilities" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商的资产信息:</td>
+            <td><input id="purchaseAsssts" type="text" name="purchaseAsssts" style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td> 采购商的价值观:</td>
+            <td><input id="purchaseSenseOfWorth" type="text" name="purchaseSenseOfWorth" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商的企业文化:</td>
+            <td><input id="purchaseCorporateCulture" type="text" name="purchaseCorporateCulture" style="width:50%;"/>
+            </td>
+        </tr>
+        <tr class="a1">
+            <td> 采购商描述:</td>
+            <td><input id="purchaseDesc" type="text" name="purchaseDesc" style="width:50%;"/></td>
+        </tr>
+        <tr>
+            <td> 采购商的组织架构:</td>
+            <td><input id="purchaseOrganization" type="text" name="purchaseOrganization" style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td></td>
+            <td>
+                <button type="submit" id="saveBtn">保存</button>
+                <input type="reset" value="清空" id="resetBtn"/></td>
+        </tr>
+    </table>
+</div>
+<script>
+    $("#resetBtn").click(function () {
+        $("#purchaseName").val('');
+        $("#purchaseContactName").val('');
+        $("#purchaseContactPhone").val('');
+        $("#purchaseDiscount").val('');
+        $("#purchaseAddress").val('');
+        $("#purchaseRegisterTime").val('');
+        $("#purchaseRegisterCapital").val('');
+        $("#purchaseNatureBusiness").val('');
+        $("#purchaseOwnershipType").val('');
+        $("#purchaseBusinessType").val('');
+        $("#purchaseBusinessLocal").val('');
+        $("#purchaseBusinessIndex").val('');
+        $("#purchaseStaffNumber").val('');
+        $("#purchaseLeader").val('');
+        $("#purchaseDevelopmentHis").val('');
+        $("#purchaseFinancialSituation").val('');
+        $("#purchaseFixedFacilities").val('');
+        $("#purchaseAsssts").val('');
+        $("#purchaseSenseOfWorth").val('');
+        $("#purchaseCorporateCulture").val('');
+        $("#purchaseDesc").val('');
+        $("#purchaseOrganization").val('');
+    });
+
+    $("#saveBtn").click(function () {
+        var purchaseName = $("#purchaseName").val();
+        var purchaseContactName = $("#purchaseContactName").val();
+        var purchaseContactPhone = $("#purchaseContactPhone").val();
+        var purchaseDiscount = $("#purchaseDiscount").val();
+        var purchaseAddress = $("#purchaseAddress").val();
+        var purchaseRegisterTime = $("#purchaseRegisterTime").val();
+        var purchaseRegisterCapital = $("#purchaseRegisterCapital").val();
+        var purchaseNatureBusiness = $("#purchaseNatureBusiness").val();
+        var purchaseOwnershipType = $("#purchaseOwnershipType").val();
+        var purchaseBusinessType = $("#purchaseBusinessType").val();
+        var purchaseBusinessLocal = $("#purchaseBusinessLocal").val();
+        var purchaseBusinessIndex = $("#purchaseBusinessIndex").val();
+        var purchaseStaffNumber = $("#purchaseStaffNumber").val();
+        var purchaseLeader = $("#purchaseLeader").val();
+        var purchaseDevelopmentHis = $("#purchaseDevelopmentHis").val();
+        var purchaseFinancialSituation = $("#purchaseFinancialSituation").val();
+        var purchaseFixedFacilities = $("#purchaseFixedFacilities").val();
+        var purchaseAsssts = $("#purchaseAsssts").val();
+        var purchaseSenseOfWorth = $("#purchaseSenseOfWorth").val();
+        var purchaseCorporateCulture = $("#purchaseCorporateCulture").val();
+        var purchaseDesc = $("#purchaseDesc").val();
+        var purchaseOrganization = $("#purchaseOrganization").val();
+        var TPurchaseSupplier = {
+            "purchaseName": purchaseName,
+            "purchaseContactName": purchaseContactName,
+            "purchaseContactPhone": purchaseContactPhone,
+            "purchaseDiscount": purchaseDiscount,
+            "purchaseAddress": purchaseAddress,
+            "purchaseRegisterTime": purchaseRegisterTime,
+            "purchaseRegisterCapital": purchaseRegisterCapital,
+            "purchaseNatureBusiness": purchaseNatureBusiness,
+            "purchaseOwnershipType": purchaseOwnershipType,
+            "purchaseBusinessType": purchaseBusinessType,
+            "purchaseBusinessLocal": purchaseBusinessLocal,
+            "purchaseBusinessIndex": purchaseBusinessIndex,
+            "purchaseStaffNumber": purchaseStaffNumber,
+            "purchaseLeader": purchaseLeader,
+            "purchaseDevelopmentHis": purchaseDevelopmentHis,
+            "purchaseFinancialSituation": purchaseFinancialSituation,
+            "purchaseFixedFacilities": purchaseFixedFacilities,
+            "purchaseAsssts": purchaseAsssts,
+            "purchaseSenseOfWorth": purchaseSenseOfWorth,
+            "purchaseCorporateCulture": purchaseCorporateCulture,
+            "purchaseDesc": purchaseDesc,
+            "purchaseOrganization": purchaseOrganization
+        };
+        $.ajax({
+            url: "/addPurchase_do",
+            contentType: "application/json;charset=UTF-8",
+            type: "POST",
+            data: JSON.stringify(TPurchaseSupplier),
+            dataType: "json",
+            success: function (result) {
+                if ("200" === result.code) {
+                    alert("保存成功");
+                } else {
+                    alert(result.message);
+                }
+            },
+            error: function () {
+                alert("加载失败");
+            }
+        });
+    });
+</script>
+</body>
+</html>

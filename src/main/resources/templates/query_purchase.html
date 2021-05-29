@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: htmlhead">
+</head>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>采购供应商列表页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.sPage.css">
+
+    <style type="text/css">
+        body, table {
+            font-size: 12px;
+        }
+
+        table {
+            table-layout: fixed;
+            empty-cells: show;
+            border-collapse: collapse;
+            margin: 0 auto;
+            padding-left: 200px;
+            padding-top: 60px
+        }
+
+        td {
+            height: 20px;
+        }
+
+        h1, h2, h3 {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            background: #FFF;
+            border: 1px solid #9DB3C5;
+            padding: 1px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .title h1 {
+            line-height: 31px;
+            text-align: center;
+            background-repeat: repeat-x;
+            background-position: 0 0;
+            color: #FFF;
+        }
+
+        .title th, .title td {
+            border: 1px solid #CAD9EA;
+            padding: 5px;
+        }
+
+        /*这个是借鉴一个论坛的样式*/
+        table.t1 {
+            border: 1px solid #cad9ea;
+            color: #666;
+        }
+
+        table.t1 th {
+            background-repeat: repeat-x;
+            height: 30px;
+        }
+
+        table.t1 td, table.t1 th {
+            border: 1px solid #cad9ea;
+            padding: 0 1em 0;
+            padding-top: 10px; /**调整tr间距*/
+        }
+
+        table.t1 tr.a1 {
+            background-color: #f5fafe;
+        }
+
+        table.t2 {
+            border: 1px solid #9db3c5;
+            color: #666;
+        }
+
+        table.t2 th {
+            background-repeat: repeat-x;
+            height: 50px;
+            color: #fff;
+        }
+
+        table.t2 td {
+            border: 1px dotted #cad9ea;
+            padding: 0 2px 0;
+        }
+
+        table.t2 th {
+            border: 1px solid #a7d1fd;
+            padding: 0 2px 0;
+        }
+
+        table.t2 tr.a1 {
+            background-color: #e8f3fd;
+        }
+
+        table.t3 {
+            border: 1px solid #fc58a6;
+            color: #720337;
+        }
+
+        table.t3 th {
+            background-repeat: repeat-x;
+            height: 30px;
+            color: #35031b;
+        }
+
+        table.t3 td {
+            border: 1px dashed #feb8d9;
+            padding: 0 1.5em 0;
+        }
+
+        table.t3 th {
+            border: 1px solid #b9f9dc;
+            padding: 0 2px 0;
+        }
+
+        table.t3 tr.a1 {
+            background-color: #fbd8e8;
+        }
+    </style>
+    <style type="text/css">
+        .num{
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .demo{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<!--头-->
+<div th:replace="fragments/head :: header"></div>
+<div style="text-align: center">
+    <table width="60%" id="query_condition_tab" border="1" class="t1" style="text-align: center">
+        <tr class="a1">
+            <td> 采购商名称:</td>
+            <td><input id="purchaseName" type="text" name="purchaseName" style="width:50%;"/></td>
+            <td> 采购商联系人姓名:</td>
+            <td><input id="purchaseContactName" type="text" name="purchaseContactName" style="width:50%;"/></td>
+        </tr>
+        <tr class="a1">
+            <td></td>
+            <td>
+                <button type="submit" id="queryBtn">查询</button>
+            </td>
+            <td><input type="reset" value="清空" id="resetBtn"/></td>
+            <td></td>
+        </tr>
+    </table>
+    <table width="60%" id="purchases_list_table" border="1" class="t1" style="text-align: center">
+    </table>
+</div>
+<!--<div id="pNum" class="num"></div>-->
+<!--<div id="myPage" class="demo"></div>-->
+
+<div id="pNum1" class="num"></div>
+<div id="myPage1" class="demo"></div>
+
+<!--<div id="pNum2" class="num"></div>-->
+<!--<div id="myPage2" class="demo"></div>-->
+<script src="/js/jquery/jquery-1.10.2.min.js"></script>
+<script src="/js/jquery/jquery.sPage.min.js"></script>
+<script>
+    $("#resetBtn").click(function () {
+        $("#purchaseName").val('');
+        $("#purchaseContactName").val('');
+    });
+
+    $("#queryBtn").click(function () {
+        ajaxPage(1);
+    });
+    $(function(){
+        $("#myPage1").sPage({
+            page:1,
+            pageSize:10,
+            total:150,
+            prevPage:"上一页",
+            nextPage:"下一页",
+            backFun:function(page){
+                $("#pNum1").text(page);
+            }
+        });
+        // 后台数据请求示例
+         ajaxPage(1);
+    });
+    //结合Ajax使用，仅供参考
+    function ajaxPage(page){
+        var purchaseName = $("#purchaseName").val();
+        var purchaseContactName = $("#purchaseContactName").val();
+        var pageIndex = page || 1;
+        var QueryPurchaseReq = {
+            "purchaseName": purchaseName,
+            "purchaseContactName": purchaseContactName,
+            "pageIndex": pageIndex,
+            "pageSize": "10"
+        };
+        $.ajax({
+            type: "POST",
+            url: "/queryPurchase_do",
+            contentType: "application/json;charset=UTF-8",
+            data: JSON.stringify(QueryPurchaseReq),
+            dataType: "json",
+            success: function(result){
+                //数据处理
+                if ("200" === result.code) {
+//                    alert(JSON.stringify(result.data));
+                    showData(result.data.rows);
+                } else {
+                    alert(result.message);
+                }
+                // 调用分页插件
+                $("#myPage1").sPage({
+                    page:pageIndex,//当前页码
+                    pageSize:10,//每页显示多少条数据，默认10条
+                    total:result.data.total,//数据总条数,后台返回
+                    backFun:function(page){
+                        //点击分页按钮回调函数，返回当前页码
+                        ajaxPage(page);
+                    }
+                });
+            },
+            error:function(e){
+                console.log(e);
+            }
+        });
+    }
+    // 将数据渲染在表格中的方法
+    function showData(data) {
+        var table = $("#purchases_list_table");
+        table.empty();
+        //拼接表头
+        table.append("<tr class=\"a1\"><td>id</td><td>采购商名称</td><td>采购商联系人姓名</td><td>采购商联系人方式</td><td>采购商的折扣</td><td>采购商的经营范围</td><td>采购商的领导人姓名</td><td>功能键</td></tr>");
+        for (var i = 0; i < data.length; i++) {
+            //拼接表格的行和列
+            var str = "<tr class=\"a1\"><td>" + data[i].id + "</td><td>" + data[i].purchaseName + "</td><td>" + data[i].purchaseContactName + "</td><td>" + data[i].purchaseContactPhone + "</td><td>" + data[i].purchaseDiscount + "</td><td>" + data[i].purchaseNatureBusiness + "</td><td>" + data[i].purchaseLeader + "</td><td>" + "<a target=\"_blank\" href='queryPurchaseDetailView/" + data[i].id + "'>详情</a>" + "|" + "<a target=\"_blank\" href='deletePurchase_do/" + data[i].id + "'>删除</a>" + "</td></tr>";
+            //追加到table中
+            table.append(str);
+        }
+    }
+</script>
+</body>
+</html>

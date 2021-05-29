@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ptg.purchase.console.dao.TScConfigMapper">
+  <resultMap id="BaseResultMap" type="com.ptg.purchase.console.dto.entity.TScConfig">
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="SC_KEY" jdbcType="VARCHAR" property="scKey" />
+    <result column="SC_VALUE" jdbcType="VARCHAR" property="scValue" />
+    <result column="DEL_FLAG" jdbcType="SMALLINT" property="delFlag" />
+    <result column="OPERATER" jdbcType="VARCHAR" property="operater" />
+    <result column="CREATE_DATE_TIME" jdbcType="TIMESTAMP" property="createDateTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    ID, SC_KEY, SC_VALUE, DEL_FLAG, OPERATER, CREATE_DATE_TIME, UPDATE_TIME
+  </sql>
+  <select id="selectByExample" parameterType="com.ptg.purchase.console.dto.entity.TScConfigExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_sc_config
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_sc_config
+    where ID = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from t_sc_config
+    where ID = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.ptg.purchase.console.dto.entity.TScConfigExample">
+    delete from t_sc_config
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.ptg.purchase.console.dto.entity.TScConfig">
+    insert into t_sc_config (ID, SC_KEY, SC_VALUE, 
+      DEL_FLAG, OPERATER, CREATE_DATE_TIME, 
+      UPDATE_TIME)
+    values (#{id,jdbcType=BIGINT}, #{scKey,jdbcType=VARCHAR}, #{scValue,jdbcType=VARCHAR}, 
+      #{delFlag,jdbcType=SMALLINT}, #{operater,jdbcType=VARCHAR}, #{createDateTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ptg.purchase.console.dto.entity.TScConfig">
+    insert into t_sc_config
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="scKey != null">
+        SC_KEY,
+      </if>
+      <if test="scValue != null">
+        SC_VALUE,
+      </if>
+      <if test="delFlag != null">
+        DEL_FLAG,
+      </if>
+      <if test="operater != null">
+        OPERATER,
+      </if>
+      <if test="createDateTime != null">
+        CREATE_DATE_TIME,
+      </if>
+      <if test="updateTime != null">
+        UPDATE_TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="scKey != null">
+        #{scKey,jdbcType=VARCHAR},
+      </if>
+      <if test="scValue != null">
+        #{scValue,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null">
+        #{delFlag,jdbcType=SMALLINT},
+      </if>
+      <if test="operater != null">
+        #{operater,jdbcType=VARCHAR},
+      </if>
+      <if test="createDateTime != null">
+        #{createDateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.ptg.purchase.console.dto.entity.TScConfigExample" resultType="java.lang.Long">
+    select count(*) from t_sc_config
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update t_sc_config
+    <set>
+      <if test="record.id != null">
+        ID = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.scKey != null">
+        SC_KEY = #{record.scKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.scValue != null">
+        SC_VALUE = #{record.scValue,jdbcType=VARCHAR},
+      </if>
+      <if test="record.delFlag != null">
+        DEL_FLAG = #{record.delFlag,jdbcType=SMALLINT},
+      </if>
+      <if test="record.operater != null">
+        OPERATER = #{record.operater,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createDateTime != null">
+        CREATE_DATE_TIME = #{record.createDateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateTime != null">
+        UPDATE_TIME = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update t_sc_config
+    set ID = #{record.id,jdbcType=BIGINT},
+      SC_KEY = #{record.scKey,jdbcType=VARCHAR},
+      SC_VALUE = #{record.scValue,jdbcType=VARCHAR},
+      DEL_FLAG = #{record.delFlag,jdbcType=SMALLINT},
+      OPERATER = #{record.operater,jdbcType=VARCHAR},
+      CREATE_DATE_TIME = #{record.createDateTime,jdbcType=TIMESTAMP},
+      UPDATE_TIME = #{record.updateTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ptg.purchase.console.dto.entity.TScConfig">
+    update t_sc_config
+    <set>
+      <if test="scKey != null">
+        SC_KEY = #{scKey,jdbcType=VARCHAR},
+      </if>
+      <if test="scValue != null">
+        SC_VALUE = #{scValue,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null">
+        DEL_FLAG = #{delFlag,jdbcType=SMALLINT},
+      </if>
+      <if test="operater != null">
+        OPERATER = #{operater,jdbcType=VARCHAR},
+      </if>
+      <if test="createDateTime != null">
+        CREATE_DATE_TIME = #{createDateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ptg.purchase.console.dto.entity.TScConfig">
+    update t_sc_config
+    set SC_KEY = #{scKey,jdbcType=VARCHAR},
+      SC_VALUE = #{scValue,jdbcType=VARCHAR},
+      DEL_FLAG = #{delFlag,jdbcType=SMALLINT},
+      OPERATER = #{operater,jdbcType=VARCHAR},
+      CREATE_DATE_TIME = #{createDateTime,jdbcType=TIMESTAMP},
+      UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

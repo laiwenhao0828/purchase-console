@@ -1,0 +1,33 @@
+server:
+  port: 565
+spring:
+  profiles:
+      active: @profileActive@
+  datasource:
+        username: root
+        password: 1ZatU6kDoB?8
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://192.168.47.26:3306/apollo?useUnicode=true&characterEncoding=utf-8
+        type: com.alibaba.druid.pool.DruidDataSource
+        dbcp2:
+          min-idle: 5
+          initial-size: 5
+          max-total: 5
+          max-wait-millis: 200
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+#分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+#日志配置
+logging:
+  config: classpath:logback-spring.xml
+#ip白名单拦截控制
+path:
+  include:
+    - /*/*
+  exclude:
+    - /purchase/query

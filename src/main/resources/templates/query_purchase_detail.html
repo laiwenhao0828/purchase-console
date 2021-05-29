@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>采购供应商详情页</title>
+    <script src="/js/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery/kkpager.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/kkpager_orange.css"/>
+    <style type="text/css">
+        body, table {
+            font-size: 12px;
+        }
+
+        table {
+            table-layout: fixed;
+            empty-cells: show;
+            border-collapse: collapse;
+            margin: 0 auto;
+            padding-left: 200px;
+            padding-top: 60px
+        }
+
+        td {
+            height: 20px;
+        }
+
+        h1, h2, h3 {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            background: #FFF;
+            border: 1px solid #9DB3C5;
+            padding: 1px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .title h1 {
+            line-height: 31px;
+            text-align: center;
+            background-repeat: repeat-x;
+            background-position: 0 0;
+            color: #FFF;
+        }
+
+        .title th, .title td {
+            border: 1px solid #CAD9EA;
+            padding: 5px;
+        }
+
+        /*这个是借鉴一个论坛的样式*/
+        table.t1 {
+            border: 1px solid #cad9ea;
+            color: #666;
+        }
+
+        table.t1 th {
+            background-repeat: repeat-x;
+            height: 30px;
+        }
+
+        table.t1 td, table.t1 th {
+            border: 1px solid #cad9ea;
+            padding: 0 1em 0;
+            padding-top: 10px; /**调整tr间距*/
+        }
+
+        table.t1 tr.a1 {
+            background-color: #f5fafe;
+        }
+
+        table.t2 {
+            border: 1px solid #9db3c5;
+            color: #666;
+        }
+
+        table.t2 th {
+            background-repeat: repeat-x;
+            height: 50px;
+            color: #fff;
+        }
+
+        table.t2 td {
+            border: 1px dotted #cad9ea;
+            padding: 0 2px 0;
+        }
+
+        table.t2 th {
+            border: 1px solid #a7d1fd;
+            padding: 0 2px 0;
+        }
+
+        table.t2 tr.a1 {
+            background-color: #e8f3fd;
+        }
+
+        table.t3 {
+            border: 1px solid #fc58a6;
+            color: #720337;
+        }
+
+        table.t3 th {
+            background-repeat: repeat-x;
+            height: 30px;
+            color: #35031b;
+        }
+
+        table.t3 td {
+            border: 1px dashed #feb8d9;
+            padding: 0 1.5em 0;
+        }
+
+        table.t3 th {
+            border: 1px solid #b9f9dc;
+            padding: 0 2px 0;
+        }
+
+        table.t3 tr.a1 {
+            background-color: #fbd8e8;
+        }
+    </style>
+</head>
+<body onload="load()">
+<!--头-->
+<div style="text-align: center">
+    <table width="60%" id="purchases_detail_table" border="1" class="t1" style="text-align: center">
+    </table>
+</div>
+
+<script>
+    function load() {
+        var pathUri = window.location.pathname;
+        var param = pathUri.substr(pathUri.lastIndexOf("/") + 1);
+        $.ajax({
+            url: "/queryPurchase_detail_do/" + param,
+            contentType: "application/json;charset=UTF-8",
+            type: "GET",
+            dataType: "json",
+            success: function (result) {
+                if ("200" === result.code) {
+//                    alert(JSON.stringify(result.data));
+                    showData(result.data);
+                } else {
+                    alert(result.message);
+                }
+            },
+            error: function () {
+                alert("加载失败");
+            }
+        });
+    }
+
+    function showData(data) {
+        var table = $("#purchases_detail_table");
+        table.empty();
+        //拼接表头
+        table.append("<thead>\n" +
+            "        <th width=\"10%\"> 采购商属性</th>\n" +
+            "        <th width=\"50%\"> 采购商属性内容</th>\n" +
+            "        </thead>");
+        //拼接表格的行和列
+        var str = "<tr class=\"a1\"><td>采购商名称:</td><td>" + data.purchaseName + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商联系人姓名:</td><td>" + data.purchaseContactName + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商联系人方式:</td><td>" + data.purchaseContactPhone + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的折扣:</td><td>" + data.purchaseDiscount + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的详细地址:</td><td>" + data.purchaseAddress + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的注册时间:</td><td>" + data.purchaseRegisterTime + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的注册资金:</td><td>" + data.purchaseRegisterCapital + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的经营范围:</td><td>" + data.purchaseNatureBusiness + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的所有制形式:</td><td>" + data.purchaseOwnershipType + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的业务类型:</td><td>" + data.purchaseBusinessType + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的业务地域:</td><td>" + data.purchaseBusinessLocal + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的业务指标:</td><td>" + data.purchaseBusinessIndex + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的员工人数:</td><td>" + data.purchaseStaffNumber + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的领导人姓名:</td><td>" + data.purchaseLeader + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的发展历程:</td><td>" + data.purchaseDevelopmentHis + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的财务状况:</td><td>" + data.purchaseFinancialSituation + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的固定设施:</td><td>" + data.purchaseFixedFacilities + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的资产信息:</td><td>" + data.purchaseAsssts + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的价值观:</td><td>" + data.purchaseSenseOfWorth + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的企业文化:</td><td>" + data.purchaseCorporateCulture + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商描述:</td><td>" + data.purchaseDesc + "</td></tr>"+
+            "<tr class=\"a1\"><td>采购商的组织架构:</td><td>" + data.purchaseOrganization + "</td></tr>"
+        ;
+        //追加到table中
+        table.append(str);
+    }
+
+    $(window).load(function () {
+        load()
+    });
+</script>
+</body>
+</html>

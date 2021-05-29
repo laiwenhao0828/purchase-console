@@ -1,0 +1,12 @@
+2020-12-06 23:20:27.388 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-06 23:20:27.547 [http-nio-565-exec-5] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-06 23:20:27.559 [http-nio-565-exec-2] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-06 23:20:27.653 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-06 23:20:39.934 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-06 23:20:46.991 [http-nio-565-exec-2] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-06 23:20:49.199 [http-nio-565-exec-3] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-06 23:20:49.219 [http-nio-565-exec-3] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@6c9fff14]
+2020-12-06 23:20:56.719 [http-nio-565-exec-9] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-06 23:20:58.494 [http-nio-565-exec-5] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-06 23:21:01.733 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-06 23:21:02.744 [http-nio-565-exec-1] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1

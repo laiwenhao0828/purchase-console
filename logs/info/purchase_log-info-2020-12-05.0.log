@@ -1,0 +1,580 @@
+2020-12-05 16:11:22.023 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 216868 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 16:11:22.025 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 16:11:23.141 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 16:11:23.152 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 16:11:23.159 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:11:23.159 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 16:11:23.239 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:11:23.239 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1184 ms
+2020-12-05 16:11:23.650 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 16:11:23.845 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 16:11:23.870 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 16:11:23.872 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.264 seconds (JVM running for 2.872)
+2020-12-05 16:11:48.752 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 16:11:48.752 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 16:11:48.759 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-12-05 16:11:50.287 [http-nio-565-exec-9] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 16:20:53.046 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 209176 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 16:20:53.164 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 16:20:54.013 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 16:20:54.024 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 16:20:54.031 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:20:54.032 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 16:20:54.123 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:20:54.123 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 927 ms
+2020-12-05 16:20:54.173 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-12-05 16:20:54.188 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-05 16:21:24.232 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 216352 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 16:21:24.234 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 16:21:25.325 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 16:21:25.335 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 16:21:25.342 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:21:25.343 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 16:21:25.423 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:21:25.423 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1161 ms
+2020-12-05 16:21:25.471 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-12-05 16:21:25.486 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-05 16:22:27.059 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 126504 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 16:22:27.061 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 16:22:27.946 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 16:22:27.956 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 16:22:27.963 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:22:27.963 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 16:22:28.043 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:22:28.043 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 928 ms
+2020-12-05 16:22:28.088 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-12-05 16:22:28.103 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-05 16:23:16.679 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 215036 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 16:23:16.682 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 16:23:17.730 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 16:23:17.741 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 16:23:17.748 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:23:17.748 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 16:23:17.827 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:23:17.827 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1019 ms
+2020-12-05 16:23:18.286 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 16:23:18.488 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 16:23:18.513 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 16:23:18.516 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.229 seconds (JVM running for 2.713)
+2020-12-05 16:23:29.344 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 16:23:29.344 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 16:23:29.350 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 16:23:29.536 [http-nio-565-exec-5] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:23:29.603 [http-nio-565-exec-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 16:23:29.651 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:23:29.906 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:23:29.930 [http-nio-565-exec-9] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:23:31.477 [http-nio-565-exec-4] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:24.071 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 218256 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 16:25:24.073 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 16:25:24.912 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 16:25:24.922 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 16:25:24.928 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:25:24.928 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 16:25:25.007 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:25:25.007 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 892 ms
+2020-12-05 16:25:25.478 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 16:25:25.672 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 16:25:25.698 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 16:25:25.700 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.209 seconds (JVM running for 2.715)
+2020-12-05 16:25:31.194 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 16:25:31.194 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 16:25:31.199 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-12-05 16:25:31.385 [http-nio-565-exec-4] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:31.396 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:31.455 [http-nio-565-exec-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 16:25:31.732 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:31.751 [http-nio-565-exec-9] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:33.274 [http-nio-565-exec-5] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:33.999 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:49.135 [http-nio-565-exec-2] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:50.345 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:50.361 [http-nio-565-exec-4] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:50.428 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:51.795 [http-nio-565-exec-5] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:25:52.579 [http-nio-565-exec-1] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:26:36.357 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 222076 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 16:26:36.358 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 16:26:37.304 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 16:26:37.313 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 16:26:37.320 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:26:37.320 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 16:26:37.396 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:26:37.396 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 901 ms
+2020-12-05 16:26:37.826 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 16:26:38.016 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 16:26:38.043 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 16:26:38.045 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.124 seconds (JVM running for 2.896)
+2020-12-05 16:26:45.368 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 16:26:45.368 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 16:26:45.374 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-12-05 16:26:45.563 [http-nio-565-exec-2] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:26:45.625 [http-nio-565-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 16:26:45.874 [http-nio-565-exec-2] INFO  c.p.p.console.interceptor.WhiteListInterceptor - WhitelistVerifyInterceptor.doBefore 该ip没有访问权限>>>>
+2020-12-05 16:27:24.951 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:27:24.978 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:27:26.360 [http-nio-565-exec-1] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:27:26.368 [http-nio-565-exec-2] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:27:26.406 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:33:20.270 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 214848 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 16:33:20.272 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 16:33:21.237 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 16:33:21.248 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 16:33:21.255 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:33:21.255 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 16:33:21.335 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:33:21.335 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 968 ms
+2020-12-05 16:33:21.807 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 16:33:22.005 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 16:33:22.033 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 16:33:22.036 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.181 seconds (JVM running for 2.704)
+2020-12-05 16:33:27.464 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 16:33:27.465 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 16:33:27.470 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-12-05 16:33:27.650 [http-nio-565-exec-4] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:33:27.720 [http-nio-565-exec-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 16:33:33.819 [http-nio-565-exec-9] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:33:33.820 [http-nio-565-exec-10] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:33:33.896 [http-nio-565-exec-2] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:34:27.842 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 220204 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 16:34:27.844 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 16:34:28.762 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 16:34:28.771 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 16:34:28.778 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 16:34:28.778 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 16:34:28.858 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 16:34:28.859 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 976 ms
+2020-12-05 16:34:29.306 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 16:34:29.493 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 16:34:29.518 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 16:34:29.520 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.311 seconds (JVM running for 2.978)
+2020-12-05 16:34:33.789 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 16:34:33.789 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 16:34:33.795 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 16:34:33.989 [http-nio-565-exec-2] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 16:34:34.051 [http-nio-565-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 16:34:35.761 [http-nio-565-exec-5] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:09:55.534 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 222620 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:09:55.536 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:09:56.465 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:09:56.476 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:09:56.483 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:09:56.483 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:09:56.569 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:09:56.569 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 926 ms
+2020-12-05 17:09:56.903 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-12-05 17:09:56.916 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-05 17:11:01.087 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 222292 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:11:01.089 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:11:02.090 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:11:02.101 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:11:02.107 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:11:02.107 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:11:02.187 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:11:02.187 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1043 ms
+2020-12-05 17:11:02.480 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-12-05 17:11:02.492 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-05 17:12:24.253 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 222544 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:12:24.255 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:12:25.182 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:12:25.192 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:12:25.199 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:12:25.199 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:12:25.278 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:12:25.278 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 974 ms
+2020-12-05 17:12:25.717 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:12:25.908 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:12:25.934 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:12:25.936 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.156 seconds (JVM running for 2.866)
+2020-12-05 17:12:41.497 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:12:41.497 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:12:41.504 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:12:41.689 [http-nio-565-exec-4] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:12:41.689 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:12:41.694 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:12:41.759 [http-nio-565-exec-4] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:12:59.052 [http-nio-565-exec-3] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:13:28.734 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:13:28.749 [http-nio-565-exec-9] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:13:28.751 [http-nio-565-exec-10] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:13:28.778 [http-nio-565-exec-3] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:23:39.530 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 218864 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:23:39.532 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:23:40.693 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:23:40.704 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:23:40.711 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:23:40.712 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:23:40.800 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:23:40.800 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1183 ms
+2020-12-05 17:23:41.314 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:23:41.548 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:23:41.575 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:23:41.578 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.471 seconds (JVM running for 3.089)
+2020-12-05 17:23:53.091 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:23:53.091 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:23:53.099 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-12-05 17:23:53.353 [http-nio-565-exec-5] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:23:53.441 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:23:53.446 [http-nio-565-exec-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:23:53.750 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:23:53.798 [http-nio-565-exec-9] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:24:27.635 [http-nio-565-exec-4] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:25:30.760 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 222472 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:25:30.763 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:25:31.982 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:25:31.995 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:25:32.017 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:25:32.017 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:25:32.117 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:25:32.117 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1281 ms
+2020-12-05 17:25:32.729 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:25:32.959 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:25:32.986 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:25:32.988 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.826 seconds (JVM running for 3.544)
+2020-12-05 17:25:59.784 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:25:59.785 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:25:59.791 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:26:00.030 [http-nio-565-exec-5] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:26:00.109 [http-nio-565-exec-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:26:01.265 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:26:01.272 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:26:01.342 [http-nio-565-exec-1] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:26:48.540 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:27:21.099 [http-nio-565-exec-9] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:27:21.153 [http-nio-565-exec-9] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@3be3591a]
+2020-12-05 17:32:07.769 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 219120 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:32:07.771 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:32:08.866 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:32:08.891 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:32:08.899 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:32:08.899 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:32:08.987 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:32:08.987 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1171 ms
+2020-12-05 17:32:09.498 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:32:09.724 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:32:09.750 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:32:09.754 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.524 seconds (JVM running for 3.092)
+2020-12-05 17:32:21.311 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:32:21.311 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:32:21.317 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:32:21.530 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:32:21.618 [http-nio-565-exec-6] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:32:21.737 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:32:21.929 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:32:21.979 [http-nio-565-exec-1] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:32:25.675 [http-nio-565-exec-3] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:32:25.711 [http-nio-565-exec-3] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@6c5abd51]
+2020-12-05 17:32:53.690 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 223896 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:32:53.692 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:32:54.774 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:32:54.785 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:32:54.792 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:32:54.792 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:32:54.881 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:32:54.881 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1148 ms
+2020-12-05 17:32:55.402 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:32:55.629 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:32:55.656 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:32:55.659 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.431 seconds (JVM running for 2.992)
+2020-12-05 17:33:00.101 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:33:00.101 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:33:00.107 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:33:00.412 [http-nio-565-exec-3] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:33:00.494 [http-nio-565-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:33:02.940 [http-nio-565-exec-5] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:33:02.976 [http-nio-565-exec-5] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@3ae9871b]
+2020-12-05 17:34:06.489 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 221900 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:34:06.491 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:34:07.582 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:34:07.594 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:34:07.601 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:34:07.601 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:34:07.690 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:34:07.691 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1085 ms
+2020-12-05 17:34:08.206 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:34:08.436 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:34:08.463 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:34:08.466 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.496 seconds (JVM running for 3.013)
+2020-12-05 17:34:13.907 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:34:13.908 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:34:13.913 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-12-05 17:34:14.216 [http-nio-565-exec-3] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:34:14.294 [http-nio-565-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:34:17.267 [http-nio-565-exec-4] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:34:17.302 [http-nio-565-exec-4] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@6396349d]
+2020-12-05 17:36:46.576 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 224112 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:36:46.578 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:36:47.643 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:36:47.654 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:36:47.661 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:36:47.661 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:36:47.746 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:36:47.746 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1116 ms
+2020-12-05 17:36:48.240 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:36:48.468 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:36:48.493 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:36:48.496 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.46 seconds (JVM running for 2.997)
+2020-12-05 17:36:54.553 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:36:54.554 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:36:54.560 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:36:54.883 [http-nio-565-exec-5] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:36:54.965 [http-nio-565-exec-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:36:54.999 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:36:55.310 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:36:55.348 [http-nio-565-exec-1] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:37:00.511 [http-nio-565-exec-3] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:37:00.546 [http-nio-565-exec-3] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@2528d628]
+2020-12-05 17:37:25.910 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 224220 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:37:25.912 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:37:27.061 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:37:27.072 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:37:27.079 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:37:27.079 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:37:27.177 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:37:27.178 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1229 ms
+2020-12-05 17:37:27.675 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:37:27.898 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:37:27.925 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:37:27.928 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.511 seconds (JVM running for 3.227)
+2020-12-05 17:37:33.010 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:37:33.011 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:37:33.017 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:37:33.314 [http-nio-565-exec-3] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:37:33.385 [http-nio-565-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:37:35.278 [http-nio-565-exec-4] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:37:35.313 [http-nio-565-exec-4] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@6e419d56]
+2020-12-05 17:45:11.447 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 224912 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:45:11.449 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:45:12.578 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:45:12.590 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:45:12.596 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:45:12.597 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:45:12.685 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:45:12.685 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1044 ms
+2020-12-05 17:45:13.218 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:45:13.443 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:45:13.469 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:45:13.472 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.489 seconds (JVM running for 3.049)
+2020-12-05 17:45:19.513 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:45:19.513 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:45:19.520 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-12-05 17:45:19.725 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:45:19.804 [http-nio-565-exec-6] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:45:19.819 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:45:20.111 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:45:20.143 [http-nio-565-exec-1] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:45:22.830 [http-nio-565-exec-2] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:45:22.864 [http-nio-565-exec-2] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@32e8fd32]
+2020-12-05 17:47:12.075 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 224524 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:47:12.077 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:47:13.189 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:47:13.200 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:47:13.212 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:47:13.212 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:47:13.300 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:47:13.300 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1093 ms
+2020-12-05 17:47:13.799 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:47:14.032 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:47:14.057 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:47:14.059 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.577 seconds (JVM running for 3.125)
+2020-12-05 17:47:17.836 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:47:17.836 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:47:17.842 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:47:18.123 [http-nio-565-exec-3] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:47:18.193 [http-nio-565-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:47:19.826 [http-nio-565-exec-4] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:47:19.861 [http-nio-565-exec-4] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@35961fe5]
+2020-12-05 17:50:11.615 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 125684 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:50:11.618 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:50:12.763 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:50:12.776 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:50:12.786 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:50:12.787 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:50:12.879 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:50:12.879 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1226 ms
+2020-12-05 17:50:13.395 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:50:13.626 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:50:13.654 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:50:13.657 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.635 seconds (JVM running for 3.185)
+2020-12-05 17:50:43.046 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 221716 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:50:43.048 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:50:44.242 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:50:44.255 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:50:44.262 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:50:44.262 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:50:44.348 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:50:44.348 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1266 ms
+2020-12-05 17:50:44.843 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:50:45.079 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:50:45.105 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:50:45.108 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.479 seconds (JVM running for 3.046)
+2020-12-05 17:50:48.450 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:50:48.451 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:50:48.457 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:50:48.688 [http-nio-565-exec-2] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:50:48.772 [http-nio-565-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:50:48.787 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:50:49.082 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:50:49.107 [http-nio-565-exec-1] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:50:50.501 [http-nio-565-exec-6] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:50:50.535 [http-nio-565-exec-6] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@53672cfa]
+2020-12-05 17:53:18.076 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 224792 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:53:18.088 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:53:19.108 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:53:19.133 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:53:19.140 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:53:19.140 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:53:19.227 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:53:19.228 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1102 ms
+2020-12-05 17:53:19.749 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:53:19.973 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:53:19.999 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:53:20.001 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.485 seconds (JVM running for 3.073)
+2020-12-05 17:53:24.497 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:53:24.497 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:53:24.503 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:53:24.803 [http-nio-565-exec-3] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:53:24.878 [http-nio-565-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:53:31.081 [http-nio-565-exec-5] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:53:31.117 [http-nio-565-exec-5] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@2331fc54]
+2020-12-05 17:53:58.953 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 224636 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:53:58.955 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:53:59.913 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:53:59.925 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:53:59.932 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:53:59.933 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:54:00.021 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:54:00.021 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1026 ms
+2020-12-05 17:54:00.515 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:54:00.734 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:54:00.760 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:54:00.762 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.531 seconds (JVM running for 3.105)
+2020-12-05 17:54:03.438 [http-nio-565-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:54:03.438 [http-nio-565-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:54:03.445 [http-nio-565-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:54:03.737 [http-nio-565-exec-3] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:54:03.811 [http-nio-565-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:55:08.478 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 222236 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 17:55:08.480 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 17:55:09.572 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 17:55:09.584 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 17:55:09.591 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 17:55:09.591 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 17:55:09.690 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 17:55:09.690 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1173 ms
+2020-12-05 17:55:10.210 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 17:55:10.434 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 17:55:10.461 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 17:55:10.464 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.434 seconds (JVM running for 3.052)
+2020-12-05 17:55:14.078 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 17:55:14.079 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 17:55:14.085 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-12-05 17:55:14.315 [http-nio-565-exec-5] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:55:14.382 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:55:14.398 [http-nio-565-exec-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 17:55:14.713 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:55:14.751 [http-nio-565-exec-1] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 17:55:16.399 [http-nio-565-exec-4] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:55:16.431 [http-nio-565-exec-4] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@1cb01539]
+2020-12-05 17:55:50.083 [http-nio-565-exec-2] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:55:50.098 [http-nio-565-exec-2] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@13bae060]
+2020-12-05 17:55:53.032 [http-nio-565-exec-6] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 17:55:53.043 [http-nio-565-exec-6] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@1453859c]
+2020-12-05 18:00:57.799 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 223088 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 18:00:57.801 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 18:00:58.977 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 18:00:58.988 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 18:00:58.996 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 18:00:58.996 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 18:00:59.083 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 18:00:59.084 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1167 ms
+2020-12-05 18:00:59.597 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 18:00:59.826 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 18:00:59.855 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 18:00:59.858 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.516 seconds (JVM running for 3.072)
+2020-12-05 18:01:08.039 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 18:01:08.040 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 18:01:08.045 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-12-05 18:01:08.269 [http-nio-565-exec-6] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:01:08.351 [http-nio-565-exec-6] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 18:01:08.368 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:01:08.670 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:01:08.694 [http-nio-565-exec-1] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:01:10.201 [http-nio-565-exec-2] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 18:01:10.261 [http-nio-565-exec-2] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@46d996f]
+2020-12-05 18:21:42.234 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 222448 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 18:21:42.236 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 18:21:43.328 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 18:21:43.340 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 18:21:43.347 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 18:21:43.347 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 18:21:43.435 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 18:21:43.436 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1105 ms
+2020-12-05 18:21:43.935 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 18:21:44.162 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 18:21:44.189 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 18:21:44.192 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.447 seconds (JVM running for 2.998)
+2020-12-05 18:21:47.986 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 18:21:47.986 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 18:21:47.993 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-12-05 18:21:48.218 [http-nio-565-exec-2] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:21:48.314 [http-nio-565-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 18:21:48.398 [http-nio-565-exec-9] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:21:48.617 [http-nio-565-exec-10] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:21:48.650 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:21:50.243 [http-nio-565-exec-3] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 18:21:50.280 [http-nio-565-exec-3] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@a04fe78]
+2020-12-05 18:27:16.002 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 221976 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 18:27:16.004 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 18:27:17.222 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 18:27:17.234 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 18:27:17.242 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 18:27:17.243 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 18:27:17.341 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 18:27:17.342 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1255 ms
+2020-12-05 18:27:17.854 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 18:27:18.082 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 18:27:18.108 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 18:27:18.111 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.562 seconds (JVM running for 3.097)
+2020-12-05 18:27:36.841 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 18:27:36.841 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 18:27:36.850 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-12-05 18:27:37.234 [http-nio-565-exec-2] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:27:37.308 [http-nio-565-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 18:27:39.688 [http-nio-565-exec-7] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:27:41.228 [http-nio-565-exec-8] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 18:27:41.264 [http-nio-565-exec-8] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@33a60f2d]
+2020-12-05 18:36:39.185 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 225692 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-05 18:36:39.187 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-05 18:36:40.150 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-05 18:36:40.188 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-05 18:36:40.195 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-05 18:36:40.196 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-05 18:36:40.289 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-05 18:36:40.289 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1057 ms
+2020-12-05 18:36:40.814 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-05 18:36:41.042 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-05 18:36:41.068 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-05 18:36:41.071 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 2.349 seconds (JVM running for 3.013)
+2020-12-05 18:36:56.571 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-05 18:36:56.571 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-05 18:36:56.578 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-12-05 18:36:56.816 [http-nio-565-exec-3] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:36:56.956 [http-nio-565-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-05 18:36:57.005 [http-nio-565-exec-8] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:36:57.287 [http-nio-565-exec-9] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:36:57.345 [http-nio-565-exec-4] INFO  com.ptg.purchase.console.util.IPUtil - IPUtil.getRemoteIP>>>>ip:0:0:0:0:0:0:0:1
+2020-12-05 18:36:58.624 [http-nio-565-exec-2] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 18:36:58.659 [http-nio-565-exec-2] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@4649197d]
+2020-12-05 18:43:51.828 [http-nio-565-exec-3] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(id=null)
+2020-12-05 18:43:51.841 [http-nio-565-exec-3] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase resp:Page{count=true, pageNum=1, pageSize=20, startRow=0, endRow=20, total=1, pages=1, reasonable=true, pageSizeZero=false}[com.ptg.purchase.console.dto.entity.TPurchaseSupplier@7391c576]

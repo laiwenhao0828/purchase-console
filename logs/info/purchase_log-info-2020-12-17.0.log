@@ -1,0 +1,127 @@
+2020-12-17 19:25:49.210 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2020-12-17 19:26:34.613 [main] INFO  layui.RetryTest - Starting RetryTest on xuconghui-DT with PID 39516 (started by xuconghui in D:\self\purchase-console)
+2020-12-17 19:26:34.613 [main] INFO  layui.RetryTest - The following profiles are active: dev
+2020-12-17 19:26:35.602 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-17 19:26:37.293 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 19:26:37.803 [main] INFO  layui.RetryTest - Started RetryTest in 49.281 seconds (JVM running for 51.273)
+2020-12-17 19:26:44.144 [Thread-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-17 20:44:09.311 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2020-12-17 20:44:54.526 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 45732 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-17 20:44:54.527 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-17 20:44:55.029 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-17 20:44:55.567 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-17 20:44:55.600 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-17 20:44:55.607 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-17 20:44:55.607 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-17 20:44:55.787 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-17 20:44:55.787 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1216 ms
+2020-12-17 20:44:56.117 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-12-17 20:44:56.154 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-12-17 20:52:36.679 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2020-12-17 20:53:21.882 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 45868 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-17 20:53:21.883 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-17 20:53:22.355 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-17 20:53:22.754 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-17 20:53:22.764 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-17 20:53:22.771 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-17 20:53:22.771 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-17 20:53:22.969 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-17 20:53:22.970 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1048 ms
+2020-12-17 20:53:23.394 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 20:53:23.610 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-17 20:53:23.635 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-17 20:53:23.637 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 47.538 seconds (JVM running for 48.283)
+2020-12-17 20:54:04.754 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 20:54:04.755 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-17 20:54:04.766 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-12-17 21:00:29.181 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2020-12-17 21:01:14.358 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 44544 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-17 21:01:14.358 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-17 21:01:14.823 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-17 21:01:15.218 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-17 21:01:15.228 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-17 21:01:15.234 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-17 21:01:15.234 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-17 21:01:15.384 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-17 21:01:15.384 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 975 ms
+2020-12-17 21:01:15.802 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 21:01:16.017 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-17 21:01:16.042 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-17 21:01:16.044 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 47.521 seconds (JVM running for 48.108)
+2020-12-17 21:01:48.349 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 21:01:48.350 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-17 21:01:48.358 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-12-17 21:05:01.318 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2020-12-17 21:05:46.517 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 44532 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-17 21:05:46.518 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-17 21:05:47.127 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-17 21:05:47.302 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$fa362fa6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 21:05:47.324 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4729781] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 21:05:47.558 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-17 21:05:47.569 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-17 21:05:47.576 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-17 21:05:47.576 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-17 21:05:47.738 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-17 21:05:47.738 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1181 ms
+2020-12-17 21:05:48.268 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-12-17 21:05:48.357 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 21:05:48.559 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-17 21:05:48.564 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-17 21:05:48.587 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-17 21:05:48.821 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-17 21:05:48.846 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-17 21:05:48.849 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 48.101 seconds (JVM running for 48.729)
+2020-12-17 21:05:48.992 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 21:05:48.992 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-17 21:05:48.999 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-12-17 22:58:30.253 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2020-12-17 22:59:15.393 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 48900 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-17 22:59:15.393 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-17 22:59:15.953 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-17 22:59:16.117 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$8dbedef4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 22:59:16.137 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$97fb46cf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 22:59:16.347 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-17 22:59:16.356 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-17 22:59:16.362 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-17 22:59:16.362 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-17 22:59:16.500 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-17 22:59:16.500 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1080 ms
+2020-12-17 22:59:16.992 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-12-17 22:59:17.080 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 22:59:17.269 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-17 22:59:17.274 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-17 22:59:17.296 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-17 22:59:17.531 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-17 22:59:17.553 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-17 22:59:17.555 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 48.0 seconds (JVM running for 48.592)
+2020-12-17 22:59:29.704 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 22:59:29.705 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-17 22:59:29.713 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-12-17 23:02:40.661 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2020-12-17 23:03:25.784 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Starting PurchaseConsoleApplication on xuconghui-DT with PID 42612 (D:\self\purchase-console\target\classes started by xuconghui in D:\self\purchase-console)
+2020-12-17 23:03:25.784 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - The following profiles are active: dev
+2020-12-17 23:03:26.359 [main] INFO  o.s.c.annotation.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-12-17 23:03:26.529 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$c021a00b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 23:03:26.550 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ca5e07e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-17 23:03:26.761 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 565 (http)
+2020-12-17 23:03:26.771 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-565"]
+2020-12-17 23:03:26.777 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-17 23:03:26.778 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-12-17 23:03:26.925 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-17 23:03:26.925 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1113 ms
+2020-12-17 23:03:27.424 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-12-17 23:03:27.521 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-17 23:03:27.712 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-12-17 23:03:27.717 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-12-17 23:03:27.741 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-12-17 23:03:27.945 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-565"]
+2020-12-17 23:03:27.968 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 565 (http) with context path ''
+2020-12-17 23:03:27.971 [main] INFO  c.ptg.purchase.console.PurchaseConsoleApplication - Started PurchaseConsoleApplication in 47.935 seconds (JVM running for 48.525)
+2020-12-17 23:03:33.144 [http-nio-565-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-17 23:03:33.144 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-12-17 23:03:33.153 [http-nio-565-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-12-17 23:30:33.742 [http-nio-565-exec-5] INFO  c.p.purchase.console.controller.PurchaseController - PurchaseController.queryPurchase queryPurchaseReq:QueryPurchaseReq(purchaseName=, purchaseContactName=)
+2020-12-17 23:30:34.057 [http-nio-565-exec-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-12-17 23:31:12.215 [http-nio-565-exec-6] INFO  c.p.purchase.console.controller.PurchaseController - LoanApplyController.queryWithdrawalAmount start>>>>>>>

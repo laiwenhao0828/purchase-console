@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ptg.purchase.console.dao.TPurchaseSupplierMapper">
+  <resultMap id="BaseResultMap" type="com.ptg.purchase.console.dto.entity.TPurchaseSupplier">
+    <id column="ID" jdbcType="BIGINT" property="id" />
+    <result column="PURCHASE_ID" jdbcType="VARCHAR" property="purchaseId" />
+    <result column="PURCHASE_NAME" jdbcType="VARCHAR" property="purchaseName" />
+    <result column="PURCHASE_CONTACT_NAME" jdbcType="VARCHAR" property="purchaseContactName" />
+    <result column="PURCHASE_CONTACT_PHONE" jdbcType="VARCHAR" property="purchaseContactPhone" />
+    <result column="PURCHASE_DISCOUNT" jdbcType="VARCHAR" property="purchaseDiscount" />
+    <result column="PURCHASE_ADDRESS" jdbcType="VARCHAR" property="purchaseAddress" />
+    <result column="PURCHASE_REGISTER_TIME" jdbcType="VARCHAR" property="purchaseRegisterTime" />
+    <result column="PURCHASE_REGISTER_CAPITAL" jdbcType="VARCHAR" property="purchaseRegisterCapital" />
+    <result column="PURCHASE_NATURE_BUSINESS" jdbcType="VARCHAR" property="purchaseNatureBusiness" />
+    <result column="PURCHASE_OWNERSHIP_TYPE" jdbcType="VARCHAR" property="purchaseOwnershipType" />
+    <result column="PURCHASE_BUSINESS_TYPE" jdbcType="VARCHAR" property="purchaseBusinessType" />
+    <result column="PURCHASE_BUSINESS_LOCAL" jdbcType="VARCHAR" property="purchaseBusinessLocal" />
+    <result column="PURCHASE_BUSINESS_INDEX" jdbcType="VARCHAR" property="purchaseBusinessIndex" />
+    <result column="PURCHASE_STAFF_NUMBER" jdbcType="VARCHAR" property="purchaseStaffNumber" />
+    <result column="PURCHASE_LEADER" jdbcType="VARCHAR" property="purchaseLeader" />
+    <result column="PURCHASE_ORGANIZATION" jdbcType="VARCHAR" property="purchaseOrganization" />
+    <result column="PURCHASE_DEVELOPMENT_HIS" jdbcType="VARCHAR" property="purchaseDevelopmentHis" />
+    <result column="PURCHASE_FINANCIAL_SITUATION" jdbcType="VARCHAR" property="purchaseFinancialSituation" />
+    <result column="PURCHASE_FIXED_FACILITIES" jdbcType="VARCHAR" property="purchaseFixedFacilities" />
+    <result column="PURCHASE_ASSSTS" jdbcType="VARCHAR" property="purchaseAsssts" />
+    <result column="PURCHASE_SENSE_OF_WORTH" jdbcType="VARCHAR" property="purchaseSenseOfWorth" />
+    <result column="PURCHASE_CORPORATE_CULTURE" jdbcType="VARCHAR" property="purchaseCorporateCulture" />
+    <result column="PURCHASE_DESC" jdbcType="VARCHAR" property="purchaseDesc" />
+    <result column="DEL_FLAG" jdbcType="SMALLINT" property="delFlag" />
+    <result column="OPERATER" jdbcType="VARCHAR" property="operater" />
+    <result column="CREATE_DATE_TIME" jdbcType="TIMESTAMP" property="createDateTime" />
+    <result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    ID, PURCHASE_ID, PURCHASE_NAME, PURCHASE_CONTACT_NAME, PURCHASE_CONTACT_PHONE, PURCHASE_DISCOUNT, 
+    PURCHASE_ADDRESS, PURCHASE_REGISTER_TIME, PURCHASE_REGISTER_CAPITAL, PURCHASE_NATURE_BUSINESS, 
+    PURCHASE_OWNERSHIP_TYPE, PURCHASE_BUSINESS_TYPE, PURCHASE_BUSINESS_LOCAL, PURCHASE_BUSINESS_INDEX, 
+    PURCHASE_STAFF_NUMBER, PURCHASE_LEADER, PURCHASE_ORGANIZATION, PURCHASE_DEVELOPMENT_HIS, 
+    PURCHASE_FINANCIAL_SITUATION, PURCHASE_FIXED_FACILITIES, PURCHASE_ASSSTS, PURCHASE_SENSE_OF_WORTH, 
+    PURCHASE_CORPORATE_CULTURE, PURCHASE_DESC, DEL_FLAG, OPERATER, CREATE_DATE_TIME, 
+    UPDATE_TIME
+  </sql>
+  <select id="selectByExample" parameterType="com.ptg.purchase.console.dto.entity.TPurchaseSupplierExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_purchase_supplier
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_purchase_supplier
+    where ID = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from t_purchase_supplier
+    where ID = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.ptg.purchase.console.dto.entity.TPurchaseSupplierExample">
+    delete from t_purchase_supplier
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.ptg.purchase.console.dto.entity.TPurchaseSupplier">
+    insert into t_purchase_supplier (ID, PURCHASE_ID, PURCHASE_NAME, 
+      PURCHASE_CONTACT_NAME, PURCHASE_CONTACT_PHONE, 
+      PURCHASE_DISCOUNT, PURCHASE_ADDRESS, PURCHASE_REGISTER_TIME, 
+      PURCHASE_REGISTER_CAPITAL, PURCHASE_NATURE_BUSINESS, 
+      PURCHASE_OWNERSHIP_TYPE, PURCHASE_BUSINESS_TYPE, 
+      PURCHASE_BUSINESS_LOCAL, PURCHASE_BUSINESS_INDEX, 
+      PURCHASE_STAFF_NUMBER, PURCHASE_LEADER, PURCHASE_ORGANIZATION, 
+      PURCHASE_DEVELOPMENT_HIS, PURCHASE_FINANCIAL_SITUATION, 
+      PURCHASE_FIXED_FACILITIES, PURCHASE_ASSSTS, 
+      PURCHASE_SENSE_OF_WORTH, PURCHASE_CORPORATE_CULTURE, 
+      PURCHASE_DESC, DEL_FLAG, OPERATER, 
+      CREATE_DATE_TIME, UPDATE_TIME)
+    values (#{id,jdbcType=BIGINT}, #{purchaseId,jdbcType=VARCHAR}, #{purchaseName,jdbcType=VARCHAR}, 
+      #{purchaseContactName,jdbcType=VARCHAR}, #{purchaseContactPhone,jdbcType=VARCHAR}, 
+      #{purchaseDiscount,jdbcType=VARCHAR}, #{purchaseAddress,jdbcType=VARCHAR}, #{purchaseRegisterTime,jdbcType=VARCHAR}, 
+      #{purchaseRegisterCapital,jdbcType=VARCHAR}, #{purchaseNatureBusiness,jdbcType=VARCHAR}, 
+      #{purchaseOwnershipType,jdbcType=VARCHAR}, #{purchaseBusinessType,jdbcType=VARCHAR}, 
+      #{purchaseBusinessLocal,jdbcType=VARCHAR}, #{purchaseBusinessIndex,jdbcType=VARCHAR}, 
+      #{purchaseStaffNumber,jdbcType=VARCHAR}, #{purchaseLeader,jdbcType=VARCHAR}, #{purchaseOrganization,jdbcType=VARCHAR}, 
+      #{purchaseDevelopmentHis,jdbcType=VARCHAR}, #{purchaseFinancialSituation,jdbcType=VARCHAR}, 
+      #{purchaseFixedFacilities,jdbcType=VARCHAR}, #{purchaseAsssts,jdbcType=VARCHAR}, 
+      #{purchaseSenseOfWorth,jdbcType=VARCHAR}, #{purchaseCorporateCulture,jdbcType=VARCHAR}, 
+      #{purchaseDesc,jdbcType=VARCHAR}, #{delFlag,jdbcType=SMALLINT}, #{operater,jdbcType=VARCHAR}, 
+      #{createDateTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ptg.purchase.console.dto.entity.TPurchaseSupplier">
+    insert into t_purchase_supplier
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID,
+      </if>
+      <if test="purchaseId != null">
+        PURCHASE_ID,
+      </if>
+      <if test="purchaseName != null">
+        PURCHASE_NAME,
+      </if>
+      <if test="purchaseContactName != null">
+        PURCHASE_CONTACT_NAME,
+      </if>
+      <if test="purchaseContactPhone != null">
+        PURCHASE_CONTACT_PHONE,
+      </if>
+      <if test="purchaseDiscount != null">
+        PURCHASE_DISCOUNT,
+      </if>
+      <if test="purchaseAddress != null">
+        PURCHASE_ADDRESS,
+      </if>
+      <if test="purchaseRegisterTime != null">
+        PURCHASE_REGISTER_TIME,
+      </if>
+      <if test="purchaseRegisterCapital != null">
+        PURCHASE_REGISTER_CAPITAL,
+      </if>
+      <if test="purchaseNatureBusiness != null">
+        PURCHASE_NATURE_BUSINESS,
+      </if>
+      <if test="purchaseOwnershipType != null">
+        PURCHASE_OWNERSHIP_TYPE,
+      </if>
+      <if test="purchaseBusinessType != null">
+        PURCHASE_BUSINESS_TYPE,
+      </if>
+      <if test="purchaseBusinessLocal != null">
+        PURCHASE_BUSINESS_LOCAL,
+      </if>
+      <if test="purchaseBusinessIndex != null">
+        PURCHASE_BUSINESS_INDEX,
+      </if>
+      <if test="purchaseStaffNumber != null">
+        PURCHASE_STAFF_NUMBER,
+      </if>
+      <if test="purchaseLeader != null">
+        PURCHASE_LEADER,
+      </if>
+      <if test="purchaseOrganization != null">
+        PURCHASE_ORGANIZATION,
+      </if>
+      <if test="purchaseDevelopmentHis != null">
+        PURCHASE_DEVELOPMENT_HIS,
+      </if>
+      <if test="purchaseFinancialSituation != null">
+        PURCHASE_FINANCIAL_SITUATION,
+      </if>
+      <if test="purchaseFixedFacilities != null">
+        PURCHASE_FIXED_FACILITIES,
+      </if>
+      <if test="purchaseAsssts != null">
+        PURCHASE_ASSSTS,
+      </if>
+      <if test="purchaseSenseOfWorth != null">
+        PURCHASE_SENSE_OF_WORTH,
+      </if>
+      <if test="purchaseCorporateCulture != null">
+        PURCHASE_CORPORATE_CULTURE,
+      </if>
+      <if test="purchaseDesc != null">
+        PURCHASE_DESC,
+      </if>
+      <if test="delFlag != null">
+        DEL_FLAG,
+      </if>
+      <if test="operater != null">
+        OPERATER,
+      </if>
+      <if test="createDateTime != null">
+        CREATE_DATE_TIME,
+      </if>
+      <if test="updateTime != null">
+        UPDATE_TIME,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="purchaseId != null">
+        #{purchaseId,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseName != null">
+        #{purchaseName,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseContactName != null">
+        #{purchaseContactName,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseContactPhone != null">
+        #{purchaseContactPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseDiscount != null">
+        #{purchaseDiscount,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseAddress != null">
+        #{purchaseAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseRegisterTime != null">
+        #{purchaseRegisterTime,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseRegisterCapital != null">
+        #{purchaseRegisterCapital,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseNatureBusiness != null">
+        #{purchaseNatureBusiness,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseOwnershipType != null">
+        #{purchaseOwnershipType,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseBusinessType != null">
+        #{purchaseBusinessType,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseBusinessLocal != null">
+        #{purchaseBusinessLocal,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseBusinessIndex != null">
+        #{purchaseBusinessIndex,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseStaffNumber != null">
+        #{purchaseStaffNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseLeader != null">
+        #{purchaseLeader,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseOrganization != null">
+        #{purchaseOrganization,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseDevelopmentHis != null">
+        #{purchaseDevelopmentHis,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseFinancialSituation != null">
+        #{purchaseFinancialSituation,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseFixedFacilities != null">
+        #{purchaseFixedFacilities,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseAsssts != null">
+        #{purchaseAsssts,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseSenseOfWorth != null">
+        #{purchaseSenseOfWorth,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseCorporateCulture != null">
+        #{purchaseCorporateCulture,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseDesc != null">
+        #{purchaseDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null">
+        #{delFlag,jdbcType=SMALLINT},
+      </if>
+      <if test="operater != null">
+        #{operater,jdbcType=VARCHAR},
+      </if>
+      <if test="createDateTime != null">
+        #{createDateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.ptg.purchase.console.dto.entity.TPurchaseSupplierExample" resultType="java.lang.Long">
+    select count(*) from t_purchase_supplier
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update t_purchase_supplier
+    <set>
+      <if test="record.id != null">
+        ID = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.purchaseId != null">
+        PURCHASE_ID = #{record.purchaseId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseName != null">
+        PURCHASE_NAME = #{record.purchaseName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseContactName != null">
+        PURCHASE_CONTACT_NAME = #{record.purchaseContactName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseContactPhone != null">
+        PURCHASE_CONTACT_PHONE = #{record.purchaseContactPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseDiscount != null">
+        PURCHASE_DISCOUNT = #{record.purchaseDiscount,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseAddress != null">
+        PURCHASE_ADDRESS = #{record.purchaseAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseRegisterTime != null">
+        PURCHASE_REGISTER_TIME = #{record.purchaseRegisterTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseRegisterCapital != null">
+        PURCHASE_REGISTER_CAPITAL = #{record.purchaseRegisterCapital,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseNatureBusiness != null">
+        PURCHASE_NATURE_BUSINESS = #{record.purchaseNatureBusiness,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseOwnershipType != null">
+        PURCHASE_OWNERSHIP_TYPE = #{record.purchaseOwnershipType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseBusinessType != null">
+        PURCHASE_BUSINESS_TYPE = #{record.purchaseBusinessType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseBusinessLocal != null">
+        PURCHASE_BUSINESS_LOCAL = #{record.purchaseBusinessLocal,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseBusinessIndex != null">
+        PURCHASE_BUSINESS_INDEX = #{record.purchaseBusinessIndex,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseStaffNumber != null">
+        PURCHASE_STAFF_NUMBER = #{record.purchaseStaffNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseLeader != null">
+        PURCHASE_LEADER = #{record.purchaseLeader,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseOrganization != null">
+        PURCHASE_ORGANIZATION = #{record.purchaseOrganization,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseDevelopmentHis != null">
+        PURCHASE_DEVELOPMENT_HIS = #{record.purchaseDevelopmentHis,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseFinancialSituation != null">
+        PURCHASE_FINANCIAL_SITUATION = #{record.purchaseFinancialSituation,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseFixedFacilities != null">
+        PURCHASE_FIXED_FACILITIES = #{record.purchaseFixedFacilities,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseAsssts != null">
+        PURCHASE_ASSSTS = #{record.purchaseAsssts,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseSenseOfWorth != null">
+        PURCHASE_SENSE_OF_WORTH = #{record.purchaseSenseOfWorth,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseCorporateCulture != null">
+        PURCHASE_CORPORATE_CULTURE = #{record.purchaseCorporateCulture,jdbcType=VARCHAR},
+      </if>
+      <if test="record.purchaseDesc != null">
+        PURCHASE_DESC = #{record.purchaseDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.delFlag != null">
+        DEL_FLAG = #{record.delFlag,jdbcType=SMALLINT},
+      </if>
+      <if test="record.operater != null">
+        OPERATER = #{record.operater,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createDateTime != null">
+        CREATE_DATE_TIME = #{record.createDateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateTime != null">
+        UPDATE_TIME = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update t_purchase_supplier
+    set ID = #{record.id,jdbcType=BIGINT},
+      PURCHASE_ID = #{record.purchaseId,jdbcType=VARCHAR},
+      PURCHASE_NAME = #{record.purchaseName,jdbcType=VARCHAR},
+      PURCHASE_CONTACT_NAME = #{record.purchaseContactName,jdbcType=VARCHAR},
+      PURCHASE_CONTACT_PHONE = #{record.purchaseContactPhone,jdbcType=VARCHAR},
+      PURCHASE_DISCOUNT = #{record.purchaseDiscount,jdbcType=VARCHAR},
+      PURCHASE_ADDRESS = #{record.purchaseAddress,jdbcType=VARCHAR},
+      PURCHASE_REGISTER_TIME = #{record.purchaseRegisterTime,jdbcType=VARCHAR},
+      PURCHASE_REGISTER_CAPITAL = #{record.purchaseRegisterCapital,jdbcType=VARCHAR},
+      PURCHASE_NATURE_BUSINESS = #{record.purchaseNatureBusiness,jdbcType=VARCHAR},
+      PURCHASE_OWNERSHIP_TYPE = #{record.purchaseOwnershipType,jdbcType=VARCHAR},
+      PURCHASE_BUSINESS_TYPE = #{record.purchaseBusinessType,jdbcType=VARCHAR},
+      PURCHASE_BUSINESS_LOCAL = #{record.purchaseBusinessLocal,jdbcType=VARCHAR},
+      PURCHASE_BUSINESS_INDEX = #{record.purchaseBusinessIndex,jdbcType=VARCHAR},
+      PURCHASE_STAFF_NUMBER = #{record.purchaseStaffNumber,jdbcType=VARCHAR},
+      PURCHASE_LEADER = #{record.purchaseLeader,jdbcType=VARCHAR},
+      PURCHASE_ORGANIZATION = #{record.purchaseOrganization,jdbcType=VARCHAR},
+      PURCHASE_DEVELOPMENT_HIS = #{record.purchaseDevelopmentHis,jdbcType=VARCHAR},
+      PURCHASE_FINANCIAL_SITUATION = #{record.purchaseFinancialSituation,jdbcType=VARCHAR},
+      PURCHASE_FIXED_FACILITIES = #{record.purchaseFixedFacilities,jdbcType=VARCHAR},
+      PURCHASE_ASSSTS = #{record.purchaseAsssts,jdbcType=VARCHAR},
+      PURCHASE_SENSE_OF_WORTH = #{record.purchaseSenseOfWorth,jdbcType=VARCHAR},
+      PURCHASE_CORPORATE_CULTURE = #{record.purchaseCorporateCulture,jdbcType=VARCHAR},
+      PURCHASE_DESC = #{record.purchaseDesc,jdbcType=VARCHAR},
+      DEL_FLAG = #{record.delFlag,jdbcType=SMALLINT},
+      OPERATER = #{record.operater,jdbcType=VARCHAR},
+      CREATE_DATE_TIME = #{record.createDateTime,jdbcType=TIMESTAMP},
+      UPDATE_TIME = #{record.updateTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ptg.purchase.console.dto.entity.TPurchaseSupplier">
+    update t_purchase_supplier
+    <set>
+      <if test="purchaseId != null">
+        PURCHASE_ID = #{purchaseId,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseName != null">
+        PURCHASE_NAME = #{purchaseName,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseContactName != null">
+        PURCHASE_CONTACT_NAME = #{purchaseContactName,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseContactPhone != null">
+        PURCHASE_CONTACT_PHONE = #{purchaseContactPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseDiscount != null">
+        PURCHASE_DISCOUNT = #{purchaseDiscount,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseAddress != null">
+        PURCHASE_ADDRESS = #{purchaseAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseRegisterTime != null">
+        PURCHASE_REGISTER_TIME = #{purchaseRegisterTime,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseRegisterCapital != null">
+        PURCHASE_REGISTER_CAPITAL = #{purchaseRegisterCapital,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseNatureBusiness != null">
+        PURCHASE_NATURE_BUSINESS = #{purchaseNatureBusiness,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseOwnershipType != null">
+        PURCHASE_OWNERSHIP_TYPE = #{purchaseOwnershipType,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseBusinessType != null">
+        PURCHASE_BUSINESS_TYPE = #{purchaseBusinessType,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseBusinessLocal != null">
+        PURCHASE_BUSINESS_LOCAL = #{purchaseBusinessLocal,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseBusinessIndex != null">
+        PURCHASE_BUSINESS_INDEX = #{purchaseBusinessIndex,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseStaffNumber != null">
+        PURCHASE_STAFF_NUMBER = #{purchaseStaffNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseLeader != null">
+        PURCHASE_LEADER = #{purchaseLeader,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseOrganization != null">
+        PURCHASE_ORGANIZATION = #{purchaseOrganization,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseDevelopmentHis != null">
+        PURCHASE_DEVELOPMENT_HIS = #{purchaseDevelopmentHis,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseFinancialSituation != null">
+        PURCHASE_FINANCIAL_SITUATION = #{purchaseFinancialSituation,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseFixedFacilities != null">
+        PURCHASE_FIXED_FACILITIES = #{purchaseFixedFacilities,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseAsssts != null">
+        PURCHASE_ASSSTS = #{purchaseAsssts,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseSenseOfWorth != null">
+        PURCHASE_SENSE_OF_WORTH = #{purchaseSenseOfWorth,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseCorporateCulture != null">
+        PURCHASE_CORPORATE_CULTURE = #{purchaseCorporateCulture,jdbcType=VARCHAR},
+      </if>
+      <if test="purchaseDesc != null">
+        PURCHASE_DESC = #{purchaseDesc,jdbcType=VARCHAR},
+      </if>
+      <if test="delFlag != null">
+        DEL_FLAG = #{delFlag,jdbcType=SMALLINT},
+      </if>
+      <if test="operater != null">
+        OPERATER = #{operater,jdbcType=VARCHAR},
+      </if>
+      <if test="createDateTime != null">
+        CREATE_DATE_TIME = #{createDateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ptg.purchase.console.dto.entity.TPurchaseSupplier">
+    update t_purchase_supplier
+    set PURCHASE_ID = #{purchaseId,jdbcType=VARCHAR},
+      PURCHASE_NAME = #{purchaseName,jdbcType=VARCHAR},
+      PURCHASE_CONTACT_NAME = #{purchaseContactName,jdbcType=VARCHAR},
+      PURCHASE_CONTACT_PHONE = #{purchaseContactPhone,jdbcType=VARCHAR},
+      PURCHASE_DISCOUNT = #{purchaseDiscount,jdbcType=VARCHAR},
+      PURCHASE_ADDRESS = #{purchaseAddress,jdbcType=VARCHAR},
+      PURCHASE_REGISTER_TIME = #{purchaseRegisterTime,jdbcType=VARCHAR},
+      PURCHASE_REGISTER_CAPITAL = #{purchaseRegisterCapital,jdbcType=VARCHAR},
+      PURCHASE_NATURE_BUSINESS = #{purchaseNatureBusiness,jdbcType=VARCHAR},
+      PURCHASE_OWNERSHIP_TYPE = #{purchaseOwnershipType,jdbcType=VARCHAR},
+      PURCHASE_BUSINESS_TYPE = #{purchaseBusinessType,jdbcType=VARCHAR},
+      PURCHASE_BUSINESS_LOCAL = #{purchaseBusinessLocal,jdbcType=VARCHAR},
+      PURCHASE_BUSINESS_INDEX = #{purchaseBusinessIndex,jdbcType=VARCHAR},
+      PURCHASE_STAFF_NUMBER = #{purchaseStaffNumber,jdbcType=VARCHAR},
+      PURCHASE_LEADER = #{purchaseLeader,jdbcType=VARCHAR},
+      PURCHASE_ORGANIZATION = #{purchaseOrganization,jdbcType=VARCHAR},
+      PURCHASE_DEVELOPMENT_HIS = #{purchaseDevelopmentHis,jdbcType=VARCHAR},
+      PURCHASE_FINANCIAL_SITUATION = #{purchaseFinancialSituation,jdbcType=VARCHAR},
+      PURCHASE_FIXED_FACILITIES = #{purchaseFixedFacilities,jdbcType=VARCHAR},
+      PURCHASE_ASSSTS = #{purchaseAsssts,jdbcType=VARCHAR},
+      PURCHASE_SENSE_OF_WORTH = #{purchaseSenseOfWorth,jdbcType=VARCHAR},
+      PURCHASE_CORPORATE_CULTURE = #{purchaseCorporateCulture,jdbcType=VARCHAR},
+      PURCHASE_DESC = #{purchaseDesc,jdbcType=VARCHAR},
+      DEL_FLAG = #{delFlag,jdbcType=SMALLINT},
+      OPERATER = #{operater,jdbcType=VARCHAR},
+      CREATE_DATE_TIME = #{createDateTime,jdbcType=TIMESTAMP},
+      UPDATE_TIME = #{updateTime,jdbcType=TIMESTAMP}
+    where ID = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
